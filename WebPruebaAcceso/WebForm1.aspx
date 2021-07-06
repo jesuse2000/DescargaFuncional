@@ -72,6 +72,13 @@
             <asp:Button ID="btnProd" runat="server" OnClick="btnProd_Click" Text="Button" />
             <br />
             <br />
+            <asp:Button ID="btnConsultProductos" runat="server" OnClick="btnConsultProductos_Click" Text="Consulta Productos" />
+            <br />
+            <br />
+            <asp:GridView ID="GridView3" runat="server">
+            </asp:GridView>
+            <br />
+            <br />
         </div>
     </form>
 </body>
