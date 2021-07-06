@@ -251,5 +251,25 @@ namespace WebPruebaAcceso {
                     GetType(), "messg77", "msgbox3(`Incorrecto`,`" + h + "`,`error`)", true);
             }
         }
+
+        protected void btnMdDS_Click(object sender, EventArgs e) {
+            DataSet temporal = Session["Tabla1"] as DataSet;
+            DataTable tabla = temporal.Tables[0];
+            DataRow ractual = null;
+            int r = 0;
+            
+            for (r = 0; r <= tabla.Rows.Count - 1; r++) {
+                ractual = tabla.Rows[r];
+                if (ractual["ID_EMPLEADO"].ToString() == txbIDBuscar.Text) {
+                    ractual["NOMBRE"] = txbNomMod.Text;
+                }
+
+            }
+
+        }
+
+        protected void Button4_Click(object sender, EventArgs e) {
+            Response.Redirect("WebForm2.aspx");
+        }
     }
 }

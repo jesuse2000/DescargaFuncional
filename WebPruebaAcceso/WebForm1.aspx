@@ -35,6 +35,17 @@
             <br />
             <asp:Button ID="btnDatosDataSet" runat="server" OnClick="btnDatosDataSet_Click" Text="Obtener datos del DataSet" />
             <br />
+            <br />
+            ID a buscar:
+            <asp:TextBox ID="txbIDBuscar" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Nombre a modificar:
+            <asp:TextBox ID="txbNomMod" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="btnMdDS" runat="server" OnClick="btnMdDS_Click" Text="Modificar datos del DataSet" />
+            <br />
             <asp:GridView ID="GridView2" runat="server">
             </asp:GridView>
             <br />
@@ -77,6 +88,8 @@
             <br />
             <asp:GridView ID="GridView3" runat="server">
             </asp:GridView>
+            <br />
+            <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Ir a operaciones Producto" />
             <br />
             <br />
         </div>
